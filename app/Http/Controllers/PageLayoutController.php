@@ -18,7 +18,7 @@ class PageLayoutController extends Controller
      */
     public function index()
     {
-        $this->page_layout->all();
+        return $this->page_layout->all();
     }
 
     /**

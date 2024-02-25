@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PageLayout extends Model
 {
+    use HasFactory;
     protected $table = 'page_layouts';
     protected $primaryKey = 'id';
     protected $fillable = [
@@ -14,5 +15,4 @@ class PageLayout extends Model
         'settings',
         'blocks',
     ];
-    use HasFactory;
 }
